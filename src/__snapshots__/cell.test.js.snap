@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when lit 1`] = `
+<DocumentFragment>
+  <td
+    class="Cell Cell-lit"
+    data-testid="light"
+  />
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when not lit 1`] = `
+<DocumentFragment>
+  <td
+    class="Cell "
+    data-testid="light"
+  />
+</DocumentFragment>
+`;

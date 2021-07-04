@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render the board matches the snapshot for all lights off 1`] = `
+<DocumentFragment>
+  <h1>
+    YOU WIN!
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`render the board matches the snapshot for all lights on 1`] = `
+<DocumentFragment>
+  <table
+    class="Board"
+  >
+    <tbody>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+      </tr>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+      </tr>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+        <td
+          class="Cell Cell-lit"
+          data-testid="light"
+        />
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
