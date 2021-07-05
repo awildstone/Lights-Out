@@ -68,15 +68,10 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
       let boardCopy = oldBoard.map(row => [...row]);
 
       /** in the copy, flip this cell and the cells around it */
-      //current cell
       flipCell(y, x, boardCopy);
-      //above
       flipCell(y - 1, x, boardCopy);
-      //below
       flipCell(y + 1, x, boardCopy);
-      //left
       flipCell(y ,x - 1, boardCopy);
-      //right
       flipCell(y, x + 1, boardCopy);
 
       return boardCopy
@@ -104,10 +99,14 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
   )
 }
 
+function chance() {
+  return Math.random();
+}
+
 Board.defaultProps = {
   nrows: 3,
   ncols: 3,
-  chanceLightStartsOn: 1
+  chanceLightStartsOn: chance()
 };
 
 export default Board;
